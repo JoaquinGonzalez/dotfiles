@@ -1,3 +1,18 @@
 [submodule ".config/vim/pack/plugins/start/emmet-vim"]
 	path = .config/vim/pack/plugins/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule ".config/vim/pack/plugins/start/ctrlp.vim"]
+	path = .config/vim/pack/plugins/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule ".config/vim/pack/plugins/start/vim-gitgutter"]
+	path = .config/vim/pack/plugins/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule ".config/vim/pack/plugins/start/vim-lsc"]
+	path = .config/vim/pack/plugins/start/vim-lsc
+	url = https://github.com/natebosch/vim-lsc.git
+[submodule ".config/vim/pack/plugins/start/dracula"]
+	path = .config/vim/pack/plugins/start/dracula
+	url = https://github.com/dracula/vim
+[submodule ".config/vim/pack/plugins/start/errormarker.vim"]
+	path = .config/vim/pack/plugins/start/errormarker.vim
+	url = https://github.com/vim-scripts/errormarker.vim.git
