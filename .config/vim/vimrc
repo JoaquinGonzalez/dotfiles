@@ -1,0 +1,51 @@
+set encoding=utf-8
+set tabstop=4 softtabstop=-1
+set shiftwidth=4
+set expandtab ts=4 sw=4 sts=-1 ai
+set smartindent
+set wrap
+set nu
+set showmatch
+set relativenumber
+set modelines=0
+set nomodeline
+set nohlsearch
+set hidden
+set smartcase
+set updatetime=250
+set hlsearch incsearch
+set runtimepath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
+syntax on
+
+set background=dark
+
+" For opacity
+hi Normal guibg=NONE ctermbg=NONE
+
+" Configure errormarker
+let &errorformat="%f:%l:%c: %t%*[^:]:%m,%f:%l: %t%*[^:]:%m," . &errorformat
+
+" Configure ctrlp
+let mapleader=","
+let maplocalleader="!"
+nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+
+" Put files in .vim/
+"set viminfo+=n~/.vim/info
+set directory=.,~/.config/vim/swap
+set backupdir=.,~/.config/vim/backup
+set undodir=.,~/.config/vim/undo
+for s:dir in [expand(&directory), expand(&backupdir), expand(&undodir)]
+    let s:dir = substitute(s:dir, "^\.,", "", "")
+    if !isdirectory(s:dir)
+        call mkdir(s:dir)
+    endif
+endfor
+
+set title titlestring=vim\ -\ %f%M%R
+
+augroup generic_rules
+    autocmd!
+    autocmd BufRead,BufNewFile *.tmpl set filetype=html
+augroup END
