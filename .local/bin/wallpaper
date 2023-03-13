@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xwallpaper --screen 0 --stretch "$HOME/wallpapers/1.jpg"
