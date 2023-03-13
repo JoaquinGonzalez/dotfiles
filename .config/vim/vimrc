@@ -15,6 +15,7 @@ set smartcase
 set updatetime=250
 set hlsearch incsearch
 set runtimepath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
+set packpath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
 syntax on
 
 set background=dark
